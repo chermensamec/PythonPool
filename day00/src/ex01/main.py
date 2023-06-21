@@ -7,9 +7,9 @@ def main():
     argv = sys.argv
     if (len(argv) != 2):
         raise Exception('Wrong number of arguments!')
-    encryptedString = argv[1].strip()
-    decryptedString = ''.join(map(extract, encryptedString.split(' ')))
-    print(decryptedString)
+    encrypted_string = argv[1].strip()
+    decrypted_string = ''.join(map(extract, encrypted_string.split(' ')))
+    print(decrypted_string)
 
 
 if __name__ == '__main__':
